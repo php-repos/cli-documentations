@@ -46,6 +46,6 @@ function my_function() {
 
 CLI Package is consist of several functions that are separated under these libraries:
 
-- [IO Read Library](https://saeghe.com/packages/cli/documentations/io/read)
-- [IO Write Library](https://saeghe.com/packages/cli/documentations/io/write)
+- [IO Read Library](https://saeghe.com/packages/cli/documentations/io-read)
+- [IO Write Library](https://saeghe.com/packages/cli/documentations/io-write)
 
