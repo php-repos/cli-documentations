@@ -1,8 +1,8 @@
-# Saeghe CLI Package
+# CLI Package
 
 ## Introduction
 
-Saeghe CLI Package has a set of useful functions to work with CLI.
+CLI Package has a set of useful functions to work with CLI.
 You can use these functions to interact with CLI.
 
 ## Requirements
@@ -11,7 +11,7 @@ This package uses the `php-mbstring` extension. Make sure you have this extensio
 
 ## Installation
 
-You can simply install this package using Saeghe by running the following command:
+You can simply install this package by running the following command:
 
 ```shell
 saeghe add git@github.com:saeghe/cli.git
