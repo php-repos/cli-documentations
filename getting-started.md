@@ -14,7 +14,7 @@ This package uses the `php-mbstring` extension. Make sure you have this extensio
 You can simply install this package by running the following command:
 
 ```shell
-saeghe add git@github.com:saeghe/cli.git
+saeghe add https://github.com/saeghe/cli.git
 ```
 
 ## Usage
