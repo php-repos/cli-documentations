@@ -1,6 +1,6 @@
 ## Read Library
 
-This document describes included functions in the `Saeghe\Cli\IO\Read` library.
+This document describes included functions in the `PhpRepos\Cli\IO\Read` library.
 
 ### argument
 
@@ -11,19 +11,19 @@ function argument(int $number, ?string $default = null): ?string
 #### Description
 
 Returns the `number`th argument passed to the PHP file from CLI. 
-Default passed value or `null` will be returned if the given `nth` argument is not  passed.
+Default passed value or `null` will be returned if the given `nth` argument is not passed.
 
 #### Usages
 
 ```php
-use function Saeghe\Cli\IO\Read\argument;
+use function PhpRepos\Cli\IO\Read\argument;
 
 $name = argument(1);
 $email = argument(2, 'my-email@example.com');
 ```
 
 ```php
-use Saeghe\Cli\IO\Read;
+use PhpRepos\Cli\IO\Read;
 
 $name = Read\argument(1);
 $email = Read\argument(2, 'my-email@example.com');
@@ -53,15 +53,19 @@ This is a shorthand for `argument(1, null)`.
 
 #### Usages
 
+Using function import:
+
 ```php
-use function Saeghe\Cli\IO\Read\command;
+use function PhpRepos\Cli\IO\Read\command;
 
 $command = command();
 
 ```
 
+Using namespace import:
+
 ```php
-use Saeghe\Cli\IO\Read;
+use PhpRepos\Cli\IO\Read;
 
 $command = Read\command();
 ```
@@ -89,16 +93,20 @@ If `name` not passed, then it returns `null` or passed default value.
 
 #### Usages
 
+Using function import:
+
 ```php
-use function Saeghe\Cli\IO\Read\command;
+use function PhpRepos\Cli\IO\Read\command;
 
 $name = parameter('name');
 $email = parameter('email', 'john@example.com');
 
 ```
 
+Using namespace import:
+
 ```php
-use Saeghe\Cli\IO\Read;
+use PhpRepos\Cli\IO\Read;
 
 $name = Read\parameter('name');
 $email = Read\parameter('email', 'john@example.com');
@@ -126,14 +134,18 @@ Returns boolean to detect if the given `name` option passed to the PHP file.
 
 #### Usages
 
+Using function import:
+
 ```php
-use function Saeghe\Cli\IO\Read\command;
+use function PhpRepos\Cli\IO\Read\command;
 
 $versionPassed = option('version');
 ```
 
+Using namespace import:
+
 ```php
-use Saeghe\Cli\IO\Read;
+use PhpRepos\Cli\IO\Read;
 
 $versionPassed = Read\option('version');
 ```

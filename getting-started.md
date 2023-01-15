@@ -14,7 +14,7 @@ This package uses the `php-mbstring` extension. Make sure you have this extensio
 You can simply install this package by running the following command:
 
 ```shell
-saeghe add https://github.com/saeghe/cli.git
+phpkg add https://github.com/php-repos/cli.git
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ You can use CLI functions by importing the function directly:
 
 ```php
 
-use function Saeghe\Cli\IO\Write\success;
+use function PhpRepos\Cli\IO\Write\success;
 
 function my_function() {
     success('This is a success message.');
@@ -34,7 +34,7 @@ function my_function() {
 Or importing the file you need to use:
 
 ```php
-use Saeghe\Cli\IO\Write;
+use PhpRepos\Cli\IO\Write;
 
 function my_function() {
     Write\success('This is a success message.');
@@ -46,6 +46,6 @@ function my_function() {
 
 CLI Package is consist of several functions that are separated under these libraries:
 
-- [IO Read Library](https://saeghe.com/packages/cli/documentations/io-read)
-- [IO Write Library](https://saeghe.com/packages/cli/documentations/io-write)
+- [IO Read Library](https://phpkg.com/packages/cli/documentations/io-read)
+- [IO Write Library](https://phpkg.com/packages/cli/documentations/io-write)
 

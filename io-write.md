@@ -1,6 +1,6 @@
 ## Write Library
 
-This document describes included functions in the `Saeghe\Cli\IO\Write` library.
+This document describes included functions in the `PhpRepos\Cli\IO\Write` library.
 
 ### line
 
@@ -14,14 +14,18 @@ Print the given `string` directly in the stdout with the default font color.
 
 #### Usages
 
+Using function import:
+
 ```php
-use function Saeghe\Cli\IO\Write\line;
+use function PhpRepos\Cli\IO\Write\line;
 
 line('Hello World!');
 ```
 
+Using namespace import:
+
 ```php
-use Saeghe\Cli\IO\Write;
+use PhpRepos\Cli\IO\Write;
 
 Write\line('Hello World!');
 ```
@@ -44,15 +48,19 @@ Assert to see the `expected` string has been printed using the `line` function a
 
 #### Usages
 
+Using function import:
+
 ```php
-use function Saeghe\Cli\IO\Write\assert_line;
+use function PhpRepos\Cli\IO\Write\assert_line;
 
 $output = shell_exec('command');
 assert_line($expected, $output);
 ```
 
+Using namespace import:
+
 ```php
-use Saeghe\Cli\IO\Write;
+use PhpRepos\Cli\IO\Write;
 
 $output = shell_exec('command');
 Write\assert_line($expected, $output);
@@ -70,14 +78,18 @@ Print the given `string` directly in the stdout with green font color.
 
 #### Usages
 
+Using function import:
+
 ```php
-use function Saeghe\Cli\IO\Write\success;
+use function PhpRepos\Cli\IO\Write\success;
 
 success('Hello World!');
 ```
 
+Using namespace import:
+
 ```php
-use Saeghe\Cli\IO\Write;
+use PhpRepos\Cli\IO\Write;
 
 Write\success('Hello World!');
 ```
@@ -100,15 +112,19 @@ Assert to see the `expected` string has been printed using the `success` functio
 
 #### Usages
 
+Using function import:
+
 ```php
-use function Saeghe\Cli\IO\Write\assert_success;
+use function PhpRepos\Cli\IO\Write\assert_success;
 
 $output = shell_exec('command');
 assert_success($expected, $output);
 ```
 
+Using namespace import:
+
 ```php
-use Saeghe\Cli\IO\Write;
+use PhpRepos\Cli\IO\Write;
 
 $output = shell_exec('command');
 Write\assert_success($expected, $output);
@@ -126,14 +142,18 @@ Print the given `string` directly in the stdout with red font color.
 
 #### Usages
 
+Using function import:
+
 ```php
-use function Saeghe\Cli\IO\Write\error;
+use function PhpRepos\Cli\IO\Write\error;
 
 error('Hello World!');
 ```
 
+Using namespace import:
+
 ```php
-use Saeghe\Cli\IO\Write;
+use PhpRepos\Cli\IO\Write;
 
 Write\error('Hello World!');
 ```
@@ -156,15 +176,19 @@ Assert to see the `expected` string has been printed using the `error` function 
 
 #### Usages
 
+Using function import:
+
 ```php
-use function Saeghe\Cli\IO\Write\assert_error;
+use function PhpRepos\Cli\IO\Write\assert_error;
 
 $output = shell_exec('command');
 assert_error($expected, $output);
 ```
 
+Using namespace import:
+
 ```php
-use Saeghe\Cli\IO\Write;
+use PhpRepos\Cli\IO\Write;
 
 $output = shell_exec('command');
 Write\assert_error($expected, $output);
