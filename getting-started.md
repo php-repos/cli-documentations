@@ -17,13 +17,21 @@ You can simply install this package by running the following command:
 phpkg add https://github.com/php-repos/cli.git
 ```
 
+You may find it necessary to include the `--force` option when adding the `cli` to your project. This is because 
+the `cli` relies on the `test-runner`, and the two may occasionally utilize different versions of each other. This 
+discrepancy can potentially disrupt the dependency resolution check.
+
+```shell
+phpkg add https://github.com/php-repos/cli.git --force
+```
+
 ## Usage
 
 You can use CLI functions by importing the function directly:
 
 ```php
 
-use function PhpRepos\Cli\IO\Write\success;
+use function PhpRepos\Cli\Output\success;
 
 function my_function() {
     success('This is a success message.');
@@ -34,10 +42,10 @@ function my_function() {
 Or importing the file you need to use:
 
 ```php
-use PhpRepos\Cli\IO\Write;
+use PhpRepos\Cli\Output;
 
 function my_function() {
-    Write\success('This is a success message.');
+    Output\success('This is a success message.');
 }
 
 ```
@@ -46,6 +54,5 @@ function my_function() {
 
 CLI Package is consist of several functions that are separated under these libraries:
 
-- [IO Read Library](https://phpkg.com/packages/cli/documentations/io-read)
-- [IO Write Library](https://phpkg.com/packages/cli/documentations/io-write)
+- [Output Library](https://phpkg.com/packages/cli/documentations/output)
 
